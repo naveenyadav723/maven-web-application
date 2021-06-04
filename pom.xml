@@ -102,13 +102,13 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <name>wallmart Releases Nexus Repository</name>
 	      <url>http://3.108.63.107:9980/naveentechnologies/repository/wallmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <name>wallmart Snapshot Nexus Repository </name>
 	      <urlhttp://3.108.63.107:9980/naveentechnologies/repository/wallmart-snapshots/></url>
 	    </snapshotRepository>
 	    
