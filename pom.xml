@@ -108,7 +108,7 @@
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>wallmart Snapshot Nexus Repository </name>
+	      <name>wallmart Snapshots Nexus Repository </name>
 	      <urlhttp://3.108.63.107:9980/naveentechnologies/repository/wallmart-snapshots/></url>
 	    </snapshotRepository>
 	    
