@@ -102,14 +102,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>wallmart Releases Nexus Repository</name>
-	      <url>http://3.108.63.107:9980/naveentechnologies/repository/wallmart-releases/</url>
+	      <name>Flipkart Releases Nexus Repository</name>
+	      <url>http://65.2.63.173:9980/naveentechnologies/repository/Flipkart-Releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>wallmart Snapshot Nexus Repository </name>
-	      <url>http://3.108.63.107:9980/naveentechnologies/repository/wallmart-snapshot/</url>
+	      <name>Flipkart Snapshot Nexus Repository </name>
+	      <url>http://65.2.63.173:9980/naveentechnologies/repository/Flipkart-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
