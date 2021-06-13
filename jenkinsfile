@@ -9,6 +9,7 @@ node
     {
         sh "${mvnHome}/bin/mvn clean package"
     }
+    /*
     stage('ExecuteSonarQubeReport')
     {
         sh "${mvnHome}/bin/mvn sonar:sonar"
@@ -33,5 +34,5 @@ Regaeds,
 Naveen Technologies''', cc: 'naveenaveenyadav@gmail.com', from: '', replyTo: '', subject: 'build over', to: 'navyav729@gmail.com'
     }
     
-    
+    */
     }
