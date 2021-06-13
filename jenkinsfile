@@ -1,0 +1,37 @@
+node
+{
+    def mvnHome = tool "maven3.6.2"
+    stage('CheckOutCode')
+    {
+        git branch: 'development', credentialsId: 'a4d5872e-0740-457b-b39b-857391040e0e', url: 'https://github.com/naveenyadav723/maven-web-application.git'
+    }
+    stage('build')
+    {
+        sh "${mvnHome}/bin/mvn clean package"
+    }
+    stage('ExecuteSonarQubeReport')
+    {
+        sh "${mvnHome}/bin/mvn sonar:sonar"
+    }
+    stage('UploadArtFactIntoNexus')
+    {
+        sh "${mvnHome}/bin/mvn deploy"
+    }
+    stage('DeployAppIntoTomcat')
+    {
+        sshagent(['c9fcd1db-8ba6-4961-be38-17ca1398d319'])
+        {
+            sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.233.198.222:/opt/apache-tomcat-9.0.46/webapps/"
+
+}
+    }
+    stage('SendEmailNotification')
+    {
+        mail bcc: '', body: '''build over..
+
+Regaeds,
+Naveen Technologies''', cc: 'naveenaveenyadav@gmail.com', from: '', replyTo: '', subject: 'build over', to: 'navyav729@gmail.com'
+    }
+    
+    
+    }
