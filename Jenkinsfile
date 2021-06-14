@@ -36,7 +36,7 @@ node ('master')
  
   stage("DeployAppTomcat")
  {
-  sshagent(['423b5b58-c0a3-42aa-af6e-f0affe1bad0c']) {
+  sshagent(['c9fcd1db-8ba6-4961-be38-17ca1398d319']) {
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@13.233.198.222:/opt/apache-tomcat-9.0.46/webapps/" 
   }
  }
@@ -47,7 +47,7 @@ node ('master')
 
  Thanks,
  Mithun Technologies,
- 9980923226.''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'devopstrainingblr@gmail.com'
+ 9980923226.''', cc: 'navyav729@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'naveenaveenyadav@gmail.com'
  }
  */
  
