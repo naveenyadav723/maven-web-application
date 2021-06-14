@@ -10,11 +10,12 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     {
         sh "${mvnHome}/bin/mvn clean package"
     }
-    /*
+    
     stage('ExecuteSonarQubeReport')
     {
         sh "${mvnHome}/bin/mvn sonar:sonar"
     }
+    /*
     stage('UploadArtFactIntoNexus')
     {
         sh "${mvnHome}/bin/mvn deploy"
